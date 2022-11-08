@@ -17,7 +17,7 @@ class _RegisterPageState extends State<RegisterPage> {
     return Scaffold(
       bottomNavigationBar: Container(
         height: 85,
-        margin: EdgeInsets.all(30),
+        margin: EdgeInsets.only(left: 30,right: 30,bottom: 30),
         child: CustomeButton(
           text: 'Register',
           color: Colors.white,
@@ -156,7 +156,7 @@ class _RegisterPageState extends State<RegisterPage> {
                 ],
               ),
             ),
-            SizedBox(height: 160,),
+            SizedBox(height: 180,),
 
             // rich text
 

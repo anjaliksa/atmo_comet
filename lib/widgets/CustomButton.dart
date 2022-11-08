@@ -7,7 +7,8 @@ class CustomeButton extends StatelessWidget{
   FontWeight? fontWeight;
   Color? color;
   var onPressed;
-  CustomeButton({this.text,this.color,this.fontWeight,this.bg,this.onPressed});
+
+  CustomeButton({this.text,this.color,this.fontWeight,this.bg,this.onPressed,});
   @override
   Widget build(BuildContext context) {
     return InkWell(
@@ -16,18 +17,21 @@ class CustomeButton extends StatelessWidget{
       },
       child: Container(
         //width: 200,
-        padding: EdgeInsets.all(28),
+        padding: EdgeInsets.all(15),
         decoration:  BoxDecoration(
             borderRadius: BorderRadius.circular(20),
             color:bg==null? Theme.of(context).primaryColor:bg
         ),
-        child: Center(
-          child: Text('$text',
-            style: Theme.of(context).textTheme.headline3!.copyWith(
-              fontWeight: fontWeight,
-              color: color,
-            ),),
+        child:Center(
+          child:
+
+            Text('$text',
+              style: Theme.of(context).textTheme.headline3!.copyWith(
+                fontWeight: fontWeight,
+                color: color,
+              ),),
         ),
+
       ),
     );
   }
