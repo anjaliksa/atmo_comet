@@ -10,9 +10,8 @@ class DeliveredPage extends StatelessWidget {
       bottomNavigationBar: Container(
         width: MediaQuery.of(context).size.width,
         height: 85,
-        margin: EdgeInsets.all(30),
+          margin: EdgeInsets.only(left: 30,right: 30,bottom: 30),
         child: CustomeButton(
-
           text: 'Email Invoice',
           color: Colors.white,
           fontWeight: FontWeight.bold,

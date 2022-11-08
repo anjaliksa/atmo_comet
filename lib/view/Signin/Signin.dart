@@ -10,7 +10,7 @@ class SigninPage extends StatelessWidget{
     return Scaffold(
       bottomNavigationBar: Container(
         height: 85,
-        margin: EdgeInsets.all(30),
+        margin: EdgeInsets.only(left:30,right: 30,bottom: 30),
         child: CustomeButton(
           text: 'Sign In',
           color: Colors.white,
@@ -92,7 +92,7 @@ class SigninPage extends StatelessWidget{
                   ),
                 ),
               ),
-              SizedBox(height: 130,),
+              SizedBox(height: 150,),
               Center(
                 child: Container(
                     margin: const EdgeInsets.only(top: 10),

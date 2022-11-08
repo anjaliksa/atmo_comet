@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'Helper/RouteHelper.dart';
+import 'view/pic_and_drop/pic_drop_address.dart';
 void main() {
   runApp(MyApp());
 }
@@ -48,12 +49,13 @@ class MyApp extends StatelessWidget{
     );
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: RoutHelper().initialRoute ,
+      initialRoute: RoutHelper().addressRoute ,
       routes: {
-        RoutHelper().initialRoute: (context) =>  SigninPage(),
+        RoutHelper().initialRoute: (context) =>  DeliveredPage(),
         RoutHelper().introRoute: (context) => RegisterPage(),
         RoutHelper().signinRoute: (context) => SigninPage(),
         RoutHelper().deliveredRoute: (context) => DeliveredPage(),
+        RoutHelper().addressRoute: (context) => PicAndDrop(),
 
 
         },

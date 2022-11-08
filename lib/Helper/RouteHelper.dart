@@ -3,4 +3,5 @@ class RoutHelper {
   String introRoute='/register';
   String deliveredRoute='/package';
   String signinRoute='/signin';
+  String addressRoute='/picAddress';
 }
